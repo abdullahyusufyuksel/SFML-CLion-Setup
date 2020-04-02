@@ -13,6 +13,13 @@ If you have ever wrote a simple "Hello World!" program within CLion, you would k
 
 
 ## Installation
+
+
+### Windows
+
+
+
+### MacOS
 Open terminal and type copy the following.
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
@@ -20,20 +27,15 @@ Open terminal and type copy the following.
 This is instaling homebrew which is an open-source software package management system that simplifies the installation of software.
 
 ![](images/brew.png)
-
+it should look something like this
 ```
 brew install sfml
 ```
 This installs sfml through homebrew
 
-### Windows
-
-
-
-### MacOS
-
-
 ## Setup
+
+### Windows
 
 ### MacOS
 Once installation is done, in your Minesweeper project, copy and paste this into your CMakeLists.txt file:
@@ -57,10 +59,37 @@ target_link_libraries(Minesweeper sfml-graphics sfml-audio)
 
 And replace the < your project name here > in  the "project(< your project name here >)" part with the name of the project you made in CLion. The gator brackets shouldn't be there. It should look like project(Minesweeper).
 
-### Windows
 
 
+## Running it
+Here is a main.cpp you can use to test to see if it works, it is also on the repo if you want to get it there. 
 
+``` c++
+#include <SFML/Graphics.hpp>
+
+int main()
+{
+    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
+    sf::CircleShape shape(100.f);
+    shape.setFillColor(sf::Color::Green);
+
+    while (window.isOpen())
+    {
+        sf::Event event;
+        while (window.pollEvent(event))
+        {
+            if (event.type == sf::Event::Closed)
+                window.close();
+        }
+
+        window.clear();
+        window.draw(shape);
+        window.display();
+    }
+
+    return 0;
+}
+```
 
 
 
