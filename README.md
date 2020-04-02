@@ -26,7 +26,7 @@ Open terminal and type copy the following.
 ```
 This is instaling homebrew which is an open-source software package management system that simplifies the installation of software.
 
-![testing](images/brew.png)
+![testing](https://github.com/ayukseluf/SFML-CLion-Setup/blob/master/images/brew.png)
 it should look something like this
 ```
 brew install sfml
