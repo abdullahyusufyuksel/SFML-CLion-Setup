@@ -15,9 +15,9 @@ If you have ever wrote a simple "Hello World!" program within CLion, you would k
 # Installation
 
 
-# Windows
+## Windows
 
 
 
-# MacOS
+## MacOS
 
