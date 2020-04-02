@@ -7,7 +7,7 @@ If you have ever wrote a simple "Hello World!" program within CLion, you would k
 ## Static Libraries in CLion
 
 
-## SFML
+# SFML
 
 
 
