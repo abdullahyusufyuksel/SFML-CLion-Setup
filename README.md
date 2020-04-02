@@ -1,4 +1,4 @@
-### SFML Setup within CLion
+ SFML Setup within CLion
 
 ## Understanding how CLion hHandles Compilation & Execution
 
